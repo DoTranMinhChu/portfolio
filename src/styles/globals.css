@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    color: #fff;
+}
+
 ul.breadcrumb li+li::before {
     content: "\276F";
     padding-left: 8px;

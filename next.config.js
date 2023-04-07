@@ -1,12 +1,20 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode: true,
+  experimental: {
+    appDir: true
+  },
   eslint: {
     dirs: ['src'],
   },
-
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')],
+  },
   reactStrictMode: true,
   swcMinify: true,
-
+  images: {
+    domains: ['localhost'],
+  },
   // Uncoment to add domain whitelist
   // images: {
   //   domains: [
