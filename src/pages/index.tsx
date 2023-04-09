@@ -1,7 +1,6 @@
 import OpenMoreButton from "@/components/button/openMoreButton.component";
-import SkillCard from "@/components/cards/skillCard.component";
-import { skillsList } from "@/data/skillsList";
-import { ICardSkills } from "@/interfaces/iCardSkills.interface";
+import SkillsList from "@/components/skillsList";
+
 
 export default function Home() {
 
@@ -60,20 +59,14 @@ export default function Home() {
 
 
       <div className="p-12 ">
-        <div className="max-w-7xl md:m-24">
+        <div className="md:m-24">
 
           <div className="py-4 text-2xl font-semibold uppercase">
             <span className="text-blue-700 h-14">/</span> My skills
           </div>
           <h2 className="py-2 text-5xl font-semibold">My extensive list of skills</h2>
-          {
-            skillsList.map((item: ICardSkills) => {
-              return (
-                <SkillCard data={item} />
-              )
-            })
-          }
 
+          <SkillsList/>
         </div>
 
       </div >
