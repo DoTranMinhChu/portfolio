@@ -8,7 +8,7 @@ const nextConfig = {
     dirs: ['src'],
   },
   sassOptions: {
-    includePaths: [path.join(__dirname, 'styles')],
+    includePaths: ['styles'],
   },
   reactStrictMode: true,
   swcMinify: true,

@@ -10,12 +10,12 @@ export default function Navbar() {
     }
     return (
         <>
-            <nav className="bg-gray-800">
-                <div className="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                    <div className="relative flex items-center justify-between h-16">
+            <nav className="bg-gray-900">
+                <div className="px-2 mx-auto sm:px-6 lg:px-8">
+                    <div className="relative flex items-center h-16">
                         <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
 
-                            <button type="button" onClick={handleToggleOpenMobileMenu} className="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                            <button type="button" onClick={handleToggleOpenMobileMenu} className="inline-flex items-center p-2 text-gray-400 rounded-md hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
                                 <span className="sr-only">Open main menu</span>
 
                                 <svg className="block w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
@@ -27,17 +27,17 @@ export default function Navbar() {
                                 </svg>
                             </button>
                         </div>
-                        <div className="flex items-center justify-center flex-1 sm:items-stretch sm:justify-start">
+                        <div className="flex items-center justify-center flex-1 sm:items-stretch sm:justify-between ">
                             <div className="flex items-center flex-shrink-0">
-                                <a href="/" className="px-3 py-2 text-sm font-medium text-white">DoTranMinhChu</a>
+                                <a href="/" className="px-3 py-2 text-xl font-medium text-white">DoTranMinhChu</a>
 
                             </div>
                             <div className="hidden sm:ml-6 sm:block">
                                 <div className="flex space-x-4">
                                     {
                                         menuNavbarList.map((item: TItemNavbar) => {
-                                            const classNameActive = "px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-md";
-                                            const classNameUnactive = "px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white";
+                                            const classNameActive = "px-6 py-2 text-xl font-medium text-white bg-gray-900 rounded-md";
+                                            const classNameUnactive = "px-6 py-2 text-xl font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white";
                                             return (
                                                 <a href={item.slug} className={router.asPath == item.slug ? classNameActive : classNameUnactive} key={item.name}>{item.title}</a>
                                             )

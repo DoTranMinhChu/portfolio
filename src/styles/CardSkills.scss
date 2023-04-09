@@ -1,0 +1,14 @@
+.h-504-px{
+    height: 504px;
+}
+.w-434-px{
+    width: 434px;
+}
+
+.line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+ }
