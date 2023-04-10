@@ -30,8 +30,8 @@ export default function Home() {
       </div>
 
       {/* About me Body Home Page */}
-      <div className="bg-gray-800 ">
-        <div className="grid grid-cols-1 gap-6 px-12 py-24 m-12 md:m-24 md:grid-cols-1 lg:grid-cols-2 gap-x-40">
+      <div className="bg-gray-800">
+        <div className="grid grid-cols-1 gap-6 px-12 py-24 m-12 md:m-24 md:py-32 2xl:py-40 md:grid-cols-1 lg:grid-cols-2 gap-x-40">
           <div className="">
             <div className="py-4 text-2xl font-semibold uppercase">
               <span className="text-blue-700 h-14">/</span> About me
@@ -57,16 +57,15 @@ export default function Home() {
         </div>
       </div>
 
-
-      <div className="p-12 ">
-        <div className="md:m-24">
+      {/* My Skills Body Home Page */}
+      <div className="p-12">
+        <div className="md:mx-24">
 
           <div className="py-4 text-2xl font-semibold uppercase">
             <span className="text-blue-700 h-14">/</span> My skills
           </div>
-          <h2 className="py-2 text-5xl font-semibold">My extensive list of skills</h2>
-
-          <SkillsList/>
+          <h2 className="py-2 text-5xl font-semibold md:mt-5">My extensive list of skills</h2>
+          <SkillsList />
         </div>
 
       </div >
