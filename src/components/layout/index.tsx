@@ -1,6 +1,7 @@
 import { IProps } from "@/interfaces/iProps.interface";
 import Navbar from "../navbar";
 import React, { ReactNode } from "react";
+import Footer from "../footer";
 
 
 
@@ -9,6 +10,7 @@ export default function Layout({ children, ...props }: IProps) {
         <div className="bg-gray-900">
             <Navbar />
             <main>{children}</main>
+            <Footer/>
         </div>
     )
 }

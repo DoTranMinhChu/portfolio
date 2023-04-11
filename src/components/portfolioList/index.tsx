@@ -17,7 +17,7 @@ export default function PortfolioList({ children, className, data, ...props }: P
         }
     })
     return (
-        <div className="grid grid-cols-1 gap-6 px-12 py-24 mx-12 md:mx-24 md:py-32 2xl:py-40 md:grid-cols-1 lg:grid-cols-2 xl:gap-x-28 md:gap-x-14">
+        <div className="grid grid-cols-1 gap-40 p-4 py-12 sm:p-8 md:p-24 sm:py-18 md:py-24 xl:px-48 md:grid-cols-1 lg:grid-cols-2">
             <div>
                 {children}
                 {leftData.map((item) => item)}

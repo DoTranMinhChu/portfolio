@@ -54,11 +54,11 @@ export default function Navbar() {
 
 
                 <div className={openMobileMenu ? "hidden" : "" + " sm:hidden"} id="mobile-menu">
-                    <div className="px-2 pt-2 pb-3 space-y-1">
+                    <div className="px-2 pt-2 pb-3 space-y-1 shadow-md shadow-gray-800">
                         {
                             menuNavbarList.map((item: TItemNavbar) => {
-                                const classNameActive = "block px-3 py-2 text-base font-medium text-white bg-gray-900 rounded-md";
-                                const classNameUnactive = "block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white";
+                                const classNameActive = "block px-3 py-2 text-xl font-medium text-white bg-gray-900 rounded-md";
+                                const classNameUnactive = "block px-3 py-2 text-xl font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white";
                                 return (
                                     <a href={item.slug} className={router.asPath == item.slug ? classNameActive : classNameUnactive} key={item.name}>{item.title}</a>
 

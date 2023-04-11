@@ -8,12 +8,12 @@ export default function Home() {
     <>
       {/* Top Body Home Page */}
       <section className="mx-auto tracking-wider">
-        <div className="grid grid-cols-1 gap-6 m-12 md:m-24 md:grid-cols-1 lg:grid-cols-2">
-          <div className="p-12">
+        <div className="grid grid-cols-1 gap-40 p-4 sm:p-8 md:p-24 xl:px-48 md:grid-cols-1 lg:grid-cols-2">
+          <div className="">
             <h1 className="mb-8 text-6xl font-semibold ">Hi,<br></br> I&apos;m Minh Chu,<br></br> Web Developer.</h1>
             <p className="text-gray-200">Front End / Back End / WordPress</p>
           </div>
-          <div className="p-12 divide-y divide-gray-500">
+          <div className="divide-y divide-gray-500 ">
             <div className="py-6">
               <h1 className="py-3 text-2xl font-medium uppercase">About me</h1>
               <p>Full stack autodidact with demonstrable capacity to assess and manage complex business needs and surmount obstacles in the way thereof thus producing refined and accessible work products.</p>
@@ -31,7 +31,7 @@ export default function Home() {
 
       {/* About me Body Home Page */}
       <section className="bg-gray-800">
-        <div className="grid grid-cols-1 gap-6 px-12 py-24 m-12 md:m-24 md:py-32 2xl:py-40 md:grid-cols-1 lg:grid-cols-2 gap-x-40">
+        <div className="grid grid-cols-1 gap-40 p-4 py-12 sm:p-8 md:p-24 xl:px-48 sm:py-18 md:py-24 md:grid-cols-1 lg:grid-cols-2 ">
           <div>
             <div className="py-4 text-2xl font-semibold uppercase">
               <span className="text-blue-700 h-14">/</span> About me
@@ -41,7 +41,7 @@ export default function Home() {
             <OpenMoreButton className="py-3 text-xl font-bold ">More about me</OpenMoreButton>
           </div>
           <div className="p-4 lg:pt-14">
-            <div className="grid grid-cols-1 gap-6 xl:grid-cols-2 lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-2">
+            <div className="grid grid-cols-1 gap-40 xl:grid-cols-2 lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-2">
               <div className="flex">
                 <div className="text-6xl font-bold">04</div>
                 <div className="items-center m-auto ml-4 text-lg font-bold">Years of <br></br> experience</div>
@@ -58,9 +58,8 @@ export default function Home() {
       </section>
 
       {/* My Skills Body Home Page */}
-      <section className="p-12">
-        <div className="md:mx-24">
-
+      <section className="p-4 py-12 sm:p-8 md:p-24 xl:px-48 sm:py-18 md:py-24">
+        <div className="">
           <div className="py-4 text-2xl font-semibold uppercase">
             <span className="text-blue-700 h-14">/</span> My skills
           </div>
@@ -70,15 +69,15 @@ export default function Home() {
       </section >
       {/* My Portfolii Body Home Page */}
       <section className="bg-gray-800">
-          <PortfolioList>
-            <div>
-              <div className="py-4 text-2xl font-semibold uppercase">
-                <span className="text-blue-700 h-14">/</span> My portfolio
-              </div>
-              <h2 className="py-2 text-5xl font-semibold">Take a look at the latest projects I’ve done</h2>
-              <OpenMoreButton className="py-3 text-xl font-bold ">Browse all projects</OpenMoreButton>
+        <PortfolioList>
+          <div>
+            <div className="py-4 text-2xl font-semibold uppercase">
+              <span className="text-blue-700 h-14">/</span> My portfolio
             </div>
-          </PortfolioList>
+            <h2 className="py-2 text-5xl font-semibold">Take a look at the latest projects I’ve done</h2>
+            <OpenMoreButton className="py-3 text-xl font-bold ">Browse all projects</OpenMoreButton>
+          </div>
+        </PortfolioList>
       </section>
 
     </>
