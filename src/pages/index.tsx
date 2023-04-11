@@ -1,5 +1,4 @@
 import OpenMoreButton from "@/components/button/openMoreButton.component";
-import PortFolioCard from "@/components/cards/portfolioCard.component";
 import PortfolioList from "@/components/portfolioList";
 import SkillsList from "@/components/skillsList";
 

@@ -1,6 +1,6 @@
 import "@/styles/CardSkills.scss"
 import { ICardSkills } from "@/interfaces/iCardSkills.interface"
-import { IProps } from "@/interfaces/iProps.interfact"
+import { IProps } from "@/interfaces/iProps.interface"
 
 interface Props extends IProps {
     data: ICardSkills

@@ -1,6 +1,6 @@
 import { ReactNode, useState } from "react"
 import "@/styles/Button.scss"
-import { IProps } from "@/interfaces/iProps.interfact"
+import { IProps } from "@/interfaces/iProps.interface"
 interface Props extends IProps {
     href?: string | undefined,
     // any props that come into the component

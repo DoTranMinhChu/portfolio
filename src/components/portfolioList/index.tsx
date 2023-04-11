@@ -1,4 +1,4 @@
-import { IProps } from "@/interfaces/iProps.interfact"
+import { IProps } from "@/interfaces/iProps.interface"
 import PortFolioCard from "../cards/portfolioCard.component"
 import { projectsList } from "@/data/projectsList"
 import { IProject } from "@/interfaces/iProject.interface";
