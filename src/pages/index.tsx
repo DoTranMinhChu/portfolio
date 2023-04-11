@@ -1,13 +1,14 @@
 import OpenMoreButton from "@/components/button/openMoreButton.component";
+import PortFolioCard from "@/components/cards/portfolioCard.component";
+import PortfolioList from "@/components/portfolioList";
 import SkillsList from "@/components/skillsList";
 
 
 export default function Home() {
-
   return (
     <>
       {/* Top Body Home Page */}
-      <div className="mx-auto tracking-wider">
+      <section className="mx-auto tracking-wider">
         <div className="grid grid-cols-1 gap-6 m-12 md:m-24 md:grid-cols-1 lg:grid-cols-2">
           <div className="p-12">
             <h1 className="mb-8 text-6xl font-semibold ">Hi,<br></br> I'm Minh Chu,<br></br> Web Developer.</h1>
@@ -27,12 +28,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* About me Body Home Page */}
-      <div className="bg-gray-800">
+      <section className="bg-gray-800">
         <div className="grid grid-cols-1 gap-6 px-12 py-24 m-12 md:m-24 md:py-32 2xl:py-40 md:grid-cols-1 lg:grid-cols-2 gap-x-40">
-          <div className="">
+          <div>
             <div className="py-4 text-2xl font-semibold uppercase">
               <span className="text-blue-700 h-14">/</span> About me
             </div>
@@ -55,10 +56,10 @@ export default function Home() {
           </div>
 
         </div>
-      </div>
+      </section>
 
       {/* My Skills Body Home Page */}
-      <div className="p-12">
+      <section className="p-12">
         <div className="md:mx-24">
 
           <div className="py-4 text-2xl font-semibold uppercase">
@@ -67,8 +68,19 @@ export default function Home() {
           <h2 className="py-2 text-5xl font-semibold md:mt-5">My extensive list of skills</h2>
           <SkillsList />
         </div>
-
-      </div >
+      </section >
+      {/* My Portfolii Body Home Page */}
+      <section className="bg-gray-800">
+          <PortfolioList>
+            <div>
+              <div className="py-4 text-2xl font-semibold uppercase">
+                <span className="text-blue-700 h-14">/</span> My portfolio
+              </div>
+              <h2 className="py-2 text-5xl font-semibold">Take a look at the latest projects I’ve done</h2>
+              <OpenMoreButton className="py-3 text-xl font-bold ">Browse all projects</OpenMoreButton>
+            </div>
+          </PortfolioList>
+      </section>
 
     </>
   )

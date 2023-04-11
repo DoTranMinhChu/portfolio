@@ -1,4 +1,4 @@
-import { IProps } from "@/interfaces/IProps.interfact";
+import { IProps } from "@/interfaces/iProps.interfact";
 import Navbar from "../navbar";
 import React, { ReactNode } from "react";
 

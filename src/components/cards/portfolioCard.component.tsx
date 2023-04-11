@@ -1,0 +1,36 @@
+import { IProject, ITechnicalProject } from "@/interfaces/iProject.interface"
+import { IProps } from "@/interfaces/iProps.interfact"
+
+interface Props extends IProps {
+    data: IProject
+}
+export default function PortFolioCard({ children, className, data, ...props }: Props) {
+    return (
+        <>
+            <div className="w-full mx-auto overflow-hidden duration-300 bg-gray-900 cursor-pointer my-14 rounded-3xl group hover:scale-105 group-hover:ease-in-out">
+                <div className="flex flex-wrap justify-end m-6 font-medium mt-9 group ">
+                    {
+                        data.technicals.map((technicalProject: ITechnicalProject) => {
+                            return (
+                                <div className="relative px-4 py-2 m-2 duration-300 rounded-xl bg-slate-600 hover:scale-105 hover:ease-in-out" key={technicalProject.name}>
+                                    {technicalProject.name}
+                                    {technicalProject.isMyPosition ? <div className="absolute w-2 h-2 bg-gray-200 rounded-full" style={{ top: "-1px", right: "-1px" }}></div> : <></>}
+
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+                <div className="m-6">
+                    <h1 className="my-5 text-4xl font-semibold">{data.name}</h1>
+                    <h2 className="text-2xl font-normal">{data.shortDescription}</h2>
+                </div>
+                <div className="w-full duration-500 mt-28 group-hover:scale-110">
+                    <img className="" src={data.thumnailUrl}></img>
+                </div>
+
+            </div>
+
+        </>
+    )
+}
