@@ -72,7 +72,7 @@ const projectsList: IProject[] = [
                 isMyPosition: true
             }
         ],
-        name: "Ahhapi",
+        name: "Ahappi",
         shortDescription: "A E-commerce application.",
         thumnailUrl: "/image/portfolio/ahappi-001.png"
     },

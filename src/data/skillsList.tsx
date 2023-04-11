@@ -7,7 +7,7 @@ const skillsList: ICardSkills[] = [
         imageSrc: "/image/skills/AWS-Dark.svg"
     },
     {
-        name: "Bootrap",
+        name: "Bootstrap",
         detail: "Powerful, extensible, and feature-packed frontend toolkit.",
         imageSrc: "/image/skills/Bootstrap.svg"
     },
