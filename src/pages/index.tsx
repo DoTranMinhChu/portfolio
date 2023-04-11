@@ -11,7 +11,7 @@ export default function Home() {
       <section className="mx-auto tracking-wider">
         <div className="grid grid-cols-1 gap-6 m-12 md:m-24 md:grid-cols-1 lg:grid-cols-2">
           <div className="p-12">
-            <h1 className="mb-8 text-6xl font-semibold ">Hi,<br></br> I'm Minh Chu,<br></br> Web Developer.</h1>
+            <h1 className="mb-8 text-6xl font-semibold ">Hi,<br></br> I&apos;m Minh Chu,<br></br> Web Developer.</h1>
             <p className="text-gray-200">Front End / Back End / WordPress</p>
           </div>
           <div className="p-12 divide-y divide-gray-500">

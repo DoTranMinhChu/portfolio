@@ -1,4 +1,5 @@
 import { menuNavbarList } from "@/data/menuNavbarLists";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react"
 
@@ -29,7 +30,7 @@ export default function Navbar() {
                         </div>
                         <div className="flex items-center justify-center flex-1 sm:items-stretch sm:justify-between ">
                             <div className="flex items-center flex-shrink-0">
-                                <a href="/" className="px-3 py-2 text-xl font-medium text-white">DoTranMinhChu</a>
+                                <Link href="/" className="px-3 py-2 text-xl font-medium text-white">DoTranMinhChu</Link>
 
                             </div>
                             <div className="hidden sm:ml-6 sm:block">
