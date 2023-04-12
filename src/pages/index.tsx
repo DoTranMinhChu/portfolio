@@ -9,21 +9,18 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>
-          Do Tran Minh Chu | Home
-        </title>
         <meta property="op:title" content="Do Tran Minh Chu Portfolio" />
+        <meta property="og:image:secure_url" content="/image/home_page.png" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="300" />
         <meta
-          name="op:description"
+          property="op:description"
           content="Do Tran Minh Chu Portfolio, introduce about projects, experiences, education,...."
           key="desc"
         />
-        <meta
-          name="op:image"
-          content="/image/home_page.png"
-        />
-        <meta name="author" content="Do Tran Minh Chu" />
-        <meta name="keywords" content="Do Tran Minh Chu, dotranminhchu, portfolio, nextjs, nodejs" />
+        <meta property="author" content="Do Tran Minh Chu" />
+        <meta property="keywords" content="Do Tran Minh Chu, dotranminhchu, portfolio, nextjs, nodejs" />
       </Head>
       {/* Top Body Home Page */}
       <section className="mx-auto tracking-wider">
