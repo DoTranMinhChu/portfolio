@@ -2,6 +2,7 @@ import { menuNavbarList } from "@/data/menuNavbarLists";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react"
+import ItemMenuButton from "../button/itemMenuButton.component";
 
 export default function Navbar() {
     const router = useRouter()
@@ -37,10 +38,9 @@ export default function Navbar() {
                                 <div className="flex space-x-4">
                                     {
                                         menuNavbarList.map((item: TItemNavbar) => {
-                                            const classNameActive = "px-6 py-2 text-xl font-medium text-white bg-gray-900 rounded-md";
-                                            const classNameUnactive = "px-6 py-2 text-xl font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white";
+                              
                                             return (
-                                                <a href={item.slug} className={router.asPath == item.slug ? classNameActive : classNameUnactive} key={item.name}>{item.title}</a>
+                                                <ItemMenuButton href={item.slug} className="px-6 py-2 text-xl font-medium text-gray-300" active={router.asPath == item.slug} key={item.name}>{item.title}</ItemMenuButton>
                                             )
                                         })
                                     }
@@ -57,11 +57,9 @@ export default function Navbar() {
                     <div className="px-2 pt-2 pb-3 space-y-1 shadow-md shadow-gray-800">
                         {
                             menuNavbarList.map((item: TItemNavbar) => {
-                                const classNameActive = "block px-3 py-2 text-xl font-medium text-white bg-gray-900 rounded-md";
-                                const classNameUnactive = "block px-3 py-2 text-xl font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white";
-                                return (
-                                    <a href={item.slug} className={router.asPath == item.slug ? classNameActive : classNameUnactive} key={item.name}>{item.title}</a>
 
+                                return (
+                                    <ItemMenuButton href={item.slug} className="block px-3 py-2 text-xl font-medium text-white" active={router.asPath == item.slug} key={item.name}>{item.title}</ItemMenuButton>
                                 )
                             })
                         }

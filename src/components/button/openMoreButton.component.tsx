@@ -1,4 +1,3 @@
-import { ReactNode, useState } from "react"
 import "@/styles/Button.scss"
 import { IProps } from "@/interfaces/iProps.interface"
 interface Props extends IProps {

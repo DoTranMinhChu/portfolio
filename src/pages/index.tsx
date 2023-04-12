@@ -3,7 +3,6 @@ import PortfolioList from "@/components/portfolioList";
 import SkillsList from "@/components/skillsList";
 import SocialsList from "@/components/socialsList";
 import { NextSeo } from "next-seo";
-import Head from "next/head";
 
 
 export default function Home() {
@@ -37,7 +36,7 @@ export default function Home() {
       />
       {/* Top Body Home Page */}
       <section className="mx-auto tracking-wider">
-        <div className="grid grid-cols-1 gap-12 p-4 py-12 sm:gap-40 sm:p-8 md:p-24 xl:px-48 sm:py-18 md:py-24 md:grid-cols-1 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-12 p-4 py-12 sm:gap-40 sm:p-8 md:p-40 xl:px-48 sm:py-18 md:py-24 md:grid-cols-1 lg:grid-cols-2">
           <div className="">
             <h1 className="mb-8 text-6xl font-semibold">Hi,<br></br> I&apos;m Minh Chu,<br></br>Fullstack Web Developer.</h1>
             <div className="flex flex-wrap gap-6 my-3">
