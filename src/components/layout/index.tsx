@@ -9,7 +9,7 @@ export default function Layout({ children, ...props }: IProps) {
     return (
         <div className="bg-gray-900">
             <Navbar />
-            <main>{children}</main>
+            <main className="min-h-screen">{children}</main>
             <Footer/>
         </div>
     )

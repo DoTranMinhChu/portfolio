@@ -1,16 +1,38 @@
 import OpenMoreButton from "@/components/button/openMoreButton.component";
 import PortfolioList from "@/components/portfolioList";
 import SkillsList from "@/components/skillsList";
+import SocialsList from "@/components/socialsList";
+import Head from "next/head";
 
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>
+          Do Tran Minh Chu | Home
+        </title>
+        <meta property="op:title" content="Do Tran Minh Chu Portfolio" />
+        <meta
+          name="op:description"
+          content="Do Tran Minh Chu Portfolio, introduce about projects, experiences, education,...."
+          key="desc"
+        />
+        <meta
+          name="op:image"
+          content="/image/home_page.png"
+        />
+        <meta name="author" content="Do Tran Minh Chu" />
+        <meta name="keywords" content="Do Tran Minh Chu, dotranminhchu, portfolio, nextjs, nodejs" />
+      </Head>
       {/* Top Body Home Page */}
       <section className="mx-auto tracking-wider">
-        <div className="grid grid-cols-1 gap-40 p-4 sm:p-8 md:p-24 xl:px-48 md:grid-cols-1 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-12 p-4 py-12 sm:gap-40 sm:p-8 md:p-24 xl:px-48 sm:py-18 md:py-24 md:grid-cols-1 lg:grid-cols-2">
           <div className="">
-            <h1 className="mb-8 text-6xl font-semibold ">Hi,<br></br> I&apos;m Minh Chu,<br></br> Web Developer.</h1>
+            <h1 className="mb-8 text-6xl font-semibold">Hi,<br></br> I&apos;m Minh Chu,<br></br>Fullstack Web Developer.</h1>
+            <div className="flex flex-wrap gap-6 my-3">
+              <SocialsList />
+            </div>
             <p className="text-gray-200">Front End / Back End / WordPress</p>
           </div>
           <div className="divide-y divide-gray-500 ">
@@ -23,7 +45,7 @@ export default function Home() {
             <div className="py-6 my-4">
               <h2 className="py-3 text-2xl font-medium uppercase">My work</h2>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat minima quia assumenda! Repellendus, numquam commodi eos optio expedita nemo debitis, quis laudantium nisi tempore quo, repellat incidunt eaque laboriosam asperiores?</p>
-              <OpenMoreButton href="/about-me" className="mt-5 uppercase"><h5>Browse portfolio</h5></OpenMoreButton>
+              <OpenMoreButton href="/portfolio" className="mt-5 uppercase"><h5>Browse portfolio</h5></OpenMoreButton>
             </div>
           </div>
         </div>
@@ -31,23 +53,23 @@ export default function Home() {
 
       {/* About me Body Home Page */}
       <section className="bg-gray-800">
-        <div className="grid grid-cols-1 gap-40 p-4 py-12 sm:p-8 md:p-24 xl:px-48 sm:py-18 md:py-24 md:grid-cols-1 lg:grid-cols-2 ">
+        <div className="grid grid-cols-1 gap-12 p-4 py-12 sm:gap-40 sm:p-8 md:p-24 xl:px-48 sm:py-18 md:py-24 md:grid-cols-1 lg:grid-cols-2">
           <div>
             <div className="py-4 text-2xl font-semibold uppercase">
               <span className="text-blue-700 h-14">/</span> About me
             </div>
             <h2 className="py-2 text-5xl font-semibold">I’ve been developing websites since 2020</h2>
             <p className="py-5 text-lg text-gray-300">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
-            <OpenMoreButton className="py-3 text-xl font-bold ">More about me</OpenMoreButton>
+            <OpenMoreButton href="/about-me" className="py-3 text-xl font-bold ">More about me</OpenMoreButton>
           </div>
           <div className="p-4 lg:pt-14">
-            <div className="grid grid-cols-1 gap-40 xl:grid-cols-2 lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-2">
+            <div className="grid grid-cols-1 gap-6 xl:gap-40 xl:grid-cols-2 lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-2">
               <div className="flex">
                 <div className="text-6xl font-bold">04</div>
                 <div className="items-center m-auto ml-4 text-lg font-bold">Years of <br></br> experience</div>
               </div>
               <div className="flex">
-                <div className="text-6xl font-bold">015</div>
+                <div className="text-6xl font-bold">012</div>
                 <div className="items-center m-auto ml-4 text-lg font-bold">Successful projects</div>
               </div>
             </div>
@@ -67,7 +89,7 @@ export default function Home() {
           <SkillsList />
         </div>
       </section >
-      {/* My Portfolii Body Home Page */}
+      {/* My Portfolio Body Home Page */}
       <section className="bg-gray-800">
         <PortfolioList>
           <div>
