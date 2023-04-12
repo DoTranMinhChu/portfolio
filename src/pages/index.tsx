@@ -2,29 +2,39 @@ import OpenMoreButton from "@/components/button/openMoreButton.component";
 import PortfolioList from "@/components/portfolioList";
 import SkillsList from "@/components/skillsList";
 import SocialsList from "@/components/socialsList";
+import { NextSeo } from "next-seo";
 import Head from "next/head";
 
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <meta property="og:title" content="Do Tran Minh Chu Portfolio" />
-        <meta property="og:image" content="/image/home_page.png" />
-        <meta property="og:image:alt" content="Do Tran Minh Chu Portfolio, introduce about projects, experiences, education,...." />
-        <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:image:width" content="2560" />
-        <meta property="og:image:height" content="1700" />
-        <meta property="og:site_name" content="dotranminhchu" />
-
-        <meta
-          property="og:description"
-          content="Do Tran Minh Chu Portfolio, introduce about projects, experiences, education,...."
-          key="desc"
-        />
-        <meta property="author" content="Do Tran Minh Chu" />
-        <meta property="keywords" content="Do Tran Minh Chu, dotranminhchu, portfolio, nextjs, nodejs" />
-      </Head>
+      <NextSeo
+        title="Do Tran Minh Chu Portfolio"
+        description="Do Tran Minh Chu Portfolio, introduce about projects, experiences, education,...."
+        openGraph={{
+          url: '/',
+          title: 'Do Tran Minh Chu Portfolio',
+          description: 'Do Tran Minh Chu Portfolio, introduce about projects, experiences, education,....',
+          images: [
+            {
+              url: '/image/home_page.png',
+              width: 800,
+              height: 600,
+              alt: 'Og Image Alt',
+              type: 'image/jpeg',
+            },
+            {
+              url: '/image/home_page.png',
+              width: 1200,
+              height: 800,
+              alt: 'Og Image Alt Second',
+              type: 'image/jpeg',
+            }
+          ],
+          siteName: 'DoTranMinhChu',
+        }}
+      />
       {/* Top Body Home Page */}
       <section className="mx-auto tracking-wider">
         <div className="grid grid-cols-1 gap-12 p-4 py-12 sm:gap-40 sm:p-8 md:p-24 xl:px-48 sm:py-18 md:py-24 md:grid-cols-1 lg:grid-cols-2">
