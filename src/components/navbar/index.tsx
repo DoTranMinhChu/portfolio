@@ -12,8 +12,8 @@ export default function Navbar() {
     }
     return (
         <>
-            <nav className="bg-gray-900">
-                <div className="px-2 mx-auto sm:px-6 lg:px-8">
+            <nav className="relative shadow-md shadow-gray-800">
+                <div className="relative z-50 px-2 mx-auto bg-gray-900 sm:px-6 lg:px-8">
                     <div className="relative flex items-center h-16">
                         <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
 
@@ -38,7 +38,7 @@ export default function Navbar() {
                                 <div className="flex space-x-4">
                                     {
                                         menuNavbarList.map((item: TItemNavbar) => {
-                              
+
                                             return (
                                                 <ItemMenuButton href={item.slug} className="px-6 py-2 text-xl font-medium text-gray-300" active={router.asPath == item.slug} key={item.name}>{item.title}</ItemMenuButton>
                                             )
@@ -53,8 +53,8 @@ export default function Navbar() {
                 </div>
 
 
-                <div className={openMobileMenu ? "hidden" : "" + " sm:hidden"} id="mobile-menu">
-                    <div className="px-2 pt-2 pb-3 space-y-1 shadow-md shadow-gray-800">
+                <div className={`duration-500 ease-in-out bg-gray-900 top-full left-0 right-0 h-fit overflow-hidden z-0  ${openMobileMenu ? "!-top-40" : "sm:!-top-40"} absolute shadow-md shadow-gray-800`} id="mobile-menu">
+                    <div className="px-2 pt-2 pb-3">
                         {
                             menuNavbarList.map((item: TItemNavbar) => {
 

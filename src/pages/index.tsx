@@ -2,6 +2,7 @@ import OpenMoreButton from "@/components/button/openMoreButton.component";
 import PortfolioList from "@/components/portfolioList";
 import SkillsList from "@/components/skillsList";
 import SocialsList from "@/components/socialsList";
+import { projectsList } from "@/data/projectsList"
 import { NextSeo } from "next-seo";
 
 
@@ -9,7 +10,7 @@ export default function Home() {
   return (
     <>
       <NextSeo
-        title="Do Tran Minh Chu Portfolio"
+        title="Do Tran Minh Chu"
         description="Do Tran Minh Chu Portfolio, introduce about projects, experiences, education,...."
         openGraph={{
           url: '/',
@@ -100,7 +101,7 @@ export default function Home() {
       </section >
       {/* My Portfolio Body Home Page */}
       <section className="bg-gray-800">
-        <PortfolioList>
+        <PortfolioList projectsList={projectsList.slice(0, 4)} cardClassName="bg-gray-900">
           <div>
             <div className="py-4 text-2xl font-semibold uppercase">
               <span className="text-blue-700 h-14">/</span> My portfolio

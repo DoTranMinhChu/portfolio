@@ -7,7 +7,7 @@ interface Props extends IProps {
 export default function PortFolioCard({ children, className, data, ...props }: Props) {
     return (
         <>
-            <div className="w-full mx-auto overflow-hidden duration-300 bg-gray-900 cursor-pointer my-14 rounded-3xl group hover:scale-105 group-hover:ease-in-out">
+            <div className={`w-full mx-auto overflow-hidden duration-300 cursor-pointer my-14 rounded-3xl group hover:scale-105 group-hover:ease-in-out ${className}`}>
                 <div className="flex flex-wrap justify-end m-6 font-medium mt-9 group ">
                     {
                         data.technicals.map((technicalProject: ITechnicalProject) => {
@@ -29,7 +29,7 @@ export default function PortFolioCard({ children, className, data, ...props }: P
                     <img className="" src={data.thumnailUrl}></img>
                 </div>
 
-            </div>
+            </div >
 
         </>
     )

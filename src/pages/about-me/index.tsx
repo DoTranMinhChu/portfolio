@@ -4,7 +4,6 @@ import Link from "next/link";
 export default function AboutMe() {
   return (
     <>
-    
       <div className="px-4 py-12 sm:py-18 md:py-24 sm:px-8 md:px-24 xl:px-48">
         <section>
           <h1 className="mb-8 text-6xl font-semibold"> I&apos;m Minh Chu,<br/>Fullstack Web Developer.</h1>

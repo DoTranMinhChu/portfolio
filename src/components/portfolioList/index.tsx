@@ -1,15 +1,17 @@
 import { IProps } from "@/interfaces/iProps.interface"
 import PortFolioCard from "../cards/portfolioCard.component"
-import { projectsList } from "@/data/projectsList"
+
 import { IProject } from "@/interfaces/iProject.interface";
 
 interface Props extends IProps {
+    projectsList: IProject[],
+    cardClassName?: string
 }
-export default function PortfolioList({ children, className, data, ...props }: Props) {
+export default function PortfolioList({ children, className, projectsList, cardClassName, data, ...props }: Props) {
     const leftData: JSX.Element[] = [];
     const rightData: JSX.Element[] = [];
     projectsList.forEach((value: IProject, index: number) => {
-        const card = <PortFolioCard data={value} key={value.name} />
+        const card = <PortFolioCard data={value} key={value.name} className={cardClassName ? cardClassName : ""} />
         if (index % 2 == 0) {
             rightData.push(card);
         } else {
