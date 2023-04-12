@@ -12,10 +12,10 @@ export default function Home() {
         <meta property="og:title" content="Do Tran Minh Chu Portfolio" />
         <meta property="og:image" content="/image/home_page.png" />
         <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:image:width" content="400" />
-        <meta property="og:image:height" content="300" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="600" />
         <meta
-          property="op:description"
+          property="og:description"
           content="Do Tran Minh Chu Portfolio, introduce about projects, experiences, education,...."
           key="desc"
         />
