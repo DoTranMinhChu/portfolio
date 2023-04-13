@@ -34,7 +34,7 @@ export default function Project({ project }: Props) {
                                     Object.keys(project.teamSize).map((value: string) => {
                                         if (project.teamSize[value])
                                             return (
-                                                <h2>{project.teamSize[value]} - {value}</h2>
+                                                <h2 key={`${project.teamSize[value]}-${value}`}>{project.teamSize[value]} - {value}</h2>
                                             )
                                     })
                                 }
@@ -50,7 +50,7 @@ export default function Project({ project }: Props) {
                             <div className="p-1 my-1 text-xl font-semibold text-gray-300">
                                 {project.technologies.map(({ name }) => {
                                     return (
-                                        <h2>{name}</h2>
+                                        <h2 key={name}>{name}</h2>
                                     )
                                 })}
                             </div>
