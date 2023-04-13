@@ -2,19 +2,3 @@
     width: 0%
 }
 
-
-.wrapper:hover .icon-button {
-    -webkit-transition: margin 0.3s ease-in-out;
-    -moz-transition: margin 0.3s ease-in-out;
-    -o-transition: margin 0.3s ease-in-out;
-    transition: margin 0.3s ease-in-out;
-    margin-left: 1rem;
-}
-
-.wrapper:hover .underline-button {
-    -webkit-transition: width 0.2s ease-in-out;
-    -moz-transition: width 0.2s ease-in-out;
-    -o-transition: width 0.2s ease-in-out;
-    transition: width 0.2s ease-in-out;
-    width: 100%;
-}

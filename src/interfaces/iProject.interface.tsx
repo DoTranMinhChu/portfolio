@@ -3,9 +3,21 @@ export interface ITechnicalProject {
     isMyPosition: boolean
 }
 export interface IProject {
-    technicals: ITechnicalProject[],
+    technologies: ITechnicalProject[],
     name: string,
+    slug: string,
+    projectType: string,
+    appType: string,
     shortDescription: string,
+    fullDesciption: string,
     thumnailUrl: string,
+    position: string,
+    teamSize: {
+        Backend: number,
+        Frontend: number,
+        Mobile: number,
+        Fullstack: number,
+        [key: string]: number
+    }
 }
 

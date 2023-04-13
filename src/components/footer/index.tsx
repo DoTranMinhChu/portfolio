@@ -19,8 +19,8 @@ export default function Footer() {
 
                     </div>
                     <div className="grid grid-cols-1 gap-4 3xl:grid-cols-2">
-                        <div className="flex justify-center">
-                            <div className="">
+                        <div className="flex flex-col items-center">
+                            <div className="min-w-fit">
                                 <div className="my-2">
                                     <h1 className="text-2xl font-bold">Email me:</h1>
                                     <OpenMoreButton href={"mailto:dotranminhchu@gmail.com"} className="text-xl font-bold ">
@@ -34,6 +34,8 @@ export default function Footer() {
                                     </OpenMoreButton>
                                 </div>
                             </div>
+
+
                         </div>
                     </div>
                 </div>
