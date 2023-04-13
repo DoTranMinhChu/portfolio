@@ -2,6 +2,7 @@ import { projectsList } from "@/data/projectsList";
 import { IProject } from "@/interfaces/iProject.interface";
 import { IProps } from "@/interfaces/iProps.interface";
 import { GetStaticPaths, GetStaticPathsResult, GetStaticProps, GetStaticPropsContext, GetStaticPropsResult } from "next";
+import { NextSeo } from "next-seo";
 import { ParsedUrlQuery } from "querystring";
 interface Props extends IProps {
     project: IProject
@@ -11,6 +12,26 @@ export default function Project({ project }: Props) {
 
     return (
         <>
+            {/* SEO */}
+            <NextSeo
+                title={`${project.name} | Do Tran Minh Chu`}
+                description={project.shortDescription}
+                openGraph={{
+                    title: `${project.name} | Do Tran Minh Chu`,
+                    description: project.shortDescription,
+                    images: [
+                        {
+                            url: project.thumnailUrl,
+                            width: 800,
+                            height: 600,
+                            alt: 'Og Image Alt',
+                            type: 'image/jpeg',
+                        },
+                    ],
+                    siteName: 'DoTranMinhChu',
+                }}
+            />
+            {/*  */}
             <section className="bg-gray-800">
                 <div className="p-4 py-12 sm:p-8 md:p-24 xl:px-48 sm:py-18 md:py-24">
                     <div className="w-2/12 h-2 my-2 bg-white"></div>

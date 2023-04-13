@@ -1,12 +1,40 @@
-import Navbar from "@/components/navbar";
+import { NextSeo } from "next-seo";
 import Link from "next/link";
 
 export default function AboutMe() {
   return (
     <>
+      {/* SEO */}
+      <NextSeo
+        title="About | Do Tran Minh Chu"
+        description="Do Tran Minh Chu Portfolio, introduce about projects, experiences, education,...."
+        openGraph={{
+          url: '/about-me',
+          title: 'About | Do Tran Minh Chu',
+          description: 'Do Tran Minh Chu Portfolio, introduce about projects, experiences, education,....',
+          images: [
+            {
+              url: '/image/home_page.png',
+              width: 800,
+              height: 600,
+              alt: 'Og Image Alt',
+              type: 'image/jpeg',
+            },
+            {
+              url: '/image/home_page.png',
+              width: 1200,
+              height: 800,
+              alt: 'Og Image Alt Second',
+              type: 'image/jpeg',
+            }
+          ],
+          siteName: 'DoTranMinhChu',
+        }}
+      />
+      {/* */}
       <div className="px-4 py-12 sm:py-18 md:py-24 sm:px-8 md:px-24 xl:px-48">
         <section>
-          <h1 className="mb-8 text-6xl font-semibold"> I&apos;m Minh Chu,<br/>Fullstack Web Developer.</h1>
+          <h1 className="mb-8 text-6xl font-semibold"> I&apos;m Minh Chu,<br />Fullstack Web Developer.</h1>
           <p className="max-w-3xl ml-2 text-lg">Full stack autodidact with demonstrable capacity to assess and manage complex business needs and surmount obstacles in the way thereof thus producing refined and accessible work products.</p>
         </section>
         <section className="py-2 sm:py-4 md:py-8 xl:py-12">

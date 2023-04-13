@@ -9,6 +9,7 @@ import { NextSeo } from "next-seo";
 export default function Home() {
   return (
     <>
+      {/* SEO */}
       <NextSeo
         title="Do Tran Minh Chu"
         description="Do Tran Minh Chu Portfolio, introduce about projects, experiences, education,...."
