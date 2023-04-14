@@ -141,7 +141,7 @@ const projectsList: IProject[] = [
         projectType: "Outsource Hitek Software",
         technologies: [
             {
-                name: "React JS",
+                name: "Next JS",
                 isMyPosition: false
             },
             {
@@ -171,6 +171,46 @@ const projectsList: IProject[] = [
         `,
     },
     {
+        name: "WorldLand",
+        slug: "wordland",
+        appType: "A NFT infomation application.",
+        projectType: "Outsource Hitek Software",
+        thumnailUrl: "/image/portfolio/findclass-001.png",
+        technologies: [
+            {
+                name: "Next JS",
+                isMyPosition: false
+            },
+            {
+                name: "Express JS",
+                isMyPosition: true
+            },
+        ],
+        position: "Backend",
+        teamSize: {
+            Backend: 2,
+            Frontend: 2,
+            Mobile: 0,
+            Fullstack: 0
+        },
+        shortDescription: `
+        <p>Findclass is a user-friendly application that helps students search for online courses based on their preferences. It offers features such as search by demand, time, and forum function to interact with others.&nbsp;</p>
+        `,
+        fullDesciption: `
+        <p>World Land is a comprehensive platform for NFT enthusiasts, providing project and minting information, a community forum, NFT news and guides, and customizable notifications. Whether you are a seasoned collector or new to the world of NFTs, World Land has everything you need to succeed in this exciting space.</p>
+        <p><br></p>
+        <p><strong>WorldLand </strong>is divided into several sections, each with its own unique features and benefits. In the project NFT information section, you will find detailed information about the latest NFT projects, including their creators, themes, and unique features. Platform keep database up-to-date, so you can be sure that you are getting the latest information about the most exciting NFT projects.</p>
+        <p><br></p>
+        <p>If you are interested in minting your own NFTs, you can find all the information you need in the minting information section. Here, platform provide step-by-step <strong>guides </strong>on how to mint your own NFTs, including information about the different platforms and tools you can use to create your own digital assets.</p>
+        <p><br></p>
+        <p><strong>WorldLand </strong>also features a <strong>community </strong>forum where you can connect with other NFT enthusiasts from around the world. You can discuss the latest NFT trends, share your own collections, and learn from others about how to get the most out of your NFT investments.</p>
+        <p><br></p>
+        <p>In addition to our <strong>community </strong>forum, <strong>Worldland </strong>also provide<strong>&nbsp;NFT news</strong> and <strong>guides </strong>to keep you up-to-date on the latest developments in the world of NFTs. Whether you are looking for information about the latest NFT releases, the best NFT marketplaces, or how to store your NFTs securely, we have got you covered.</p>
+        <p><br></p>
+        <p>Finally, <strong>WorldLand </strong>offer a notification system that keeps you informed about the latest <strong>NFT projects, events, and news</strong>. You can customize your notifications to receive updates about the topics that interest you the most, so you never miss out on the latest developments in the world of NFTs.</p>
+        `,
+    },
+    {
         name: "Findclass",
         slug: "findclass",
         appType: "A educational application.",
@@ -178,7 +218,7 @@ const projectsList: IProject[] = [
         thumnailUrl: "/image/portfolio/findclass-001.png",
         technologies: [
             {
-                name: "React JS",
+                name: "Next JS",
                 isMyPosition: false
             },
             {
