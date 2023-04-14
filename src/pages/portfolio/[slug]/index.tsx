@@ -43,25 +43,28 @@ export default function Project({ project }: Props) {
             <img src={project.thumnailUrl}></img>
             <section className="bg-gray-800">
                 <div className="grid grid-cols-1 gap-12 p-4 py-12 sm:p-8 md:p-24 xl:px-48 sm:py-18 md:py-24 md:grid-cols-1 lg:grid-cols-9">
-                    <div className="flex flex-col col-span-3">
-                        <div className="my-4">
-                            <h1 className="text-2xl font-bold">Client</h1>
-                            <div className="p-1 my-1 text-xl font-semibold text-gray-300">{project.projectType}</div>
-                        </div>
-                        <div className="my-4">
-                            <h1 className="text-2xl font-bold">Teamsize</h1>
-                            <div className="p-1 my-1 text-xl font-semibold text-gray-300">
-                                {
-                                    Object.keys(project.teamSize).map((value: string) => {
-                                        if (project.teamSize[value])
-                                            return (
-                                                <h2 key={`${project.teamSize[value]}-${value}`}>{project.teamSize[value]} - {value}</h2>
-                                            )
-                                    })
-                                }
+                    <div className="col-span-full lg:col-span-3">
+                        <div className="flex flex-col">
+                            <div className="my-4">
+                                <h1 className="text-2xl font-bold">Client</h1>
+                                <div className="p-1 my-1 text-xl font-semibold text-gray-300">{project.projectType}</div>
                             </div>
+                            <div className="my-4">
+                                <h1 className="text-2xl font-bold">Teamsize</h1>
+                                <div className="p-1 my-1 text-xl font-semibold text-gray-300">
+                                    {
+                                        Object.keys(project.teamSize).map((value: string) => {
+                                            if (project.teamSize[value])
+                                                return (
+                                                    <h2 key={`${project.teamSize[value]}-${value}`}>{project.teamSize[value]} - {value}</h2>
+                                                )
+                                        })
+                                    }
+                                </div>
 
+                            </div>
                         </div>
+
                         <div className="my-4">
                             <h1 className="text-2xl font-bold">Position</h1>
                             <div className="p-1 my-1 text-xl font-semibold text-gray-300">{project.position}</div>
@@ -77,7 +80,7 @@ export default function Project({ project }: Props) {
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-6">
+                    <div className="col-span-full lg:col-span-6">
                         <div>
                             <h1 className="mb-4 text-3xl font-bold">About the project</h1>
                             <div className="p-1 my-1 text-base text-gray-300" dangerouslySetInnerHTML={{ __html: project.fullDesciption }}></div>

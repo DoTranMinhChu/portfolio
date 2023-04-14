@@ -175,7 +175,7 @@ const projectsList: IProject[] = [
         slug: "wordland",
         appType: "A NFT infomation application.",
         projectType: "Outsource Hitek Software",
-        thumnailUrl: "/image/portfolio/findclass-001.png",
+        thumnailUrl: "/image/portfolio/worldland-001.png",
         technologies: [
             {
                 name: "Next JS",
