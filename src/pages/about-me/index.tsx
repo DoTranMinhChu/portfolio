@@ -49,14 +49,17 @@ export default function AboutMe() {
                 <span className="text-xl">Backend Developer -</span>
                 <Link className="inline-block mx-2 text-blue-700 hover:text-blue-600" href={"https://hitek.com.vn"} target="_blank">Hitek software</Link>
               </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid autem consectetur
-                quas repellendus itaque fuga non eaque quaerat labore placeat cumque inventore nesciunt modi facilis,
-                rem iusto illo, aliquam reprehenderit.
-                <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, nesciunt similique alias molestiae minus,
-                tempora dignissimos maxime, aperiam esse quasi nam! Omnis unde, cum facere quibusdam earum dolor culpa officia.
-              </p>
+              <ul className="pl-8 list-disc">
+                <li>Design and develop user-friendly, responsive web applications using a variety of programming languages and web development frameworks, including ExpressJS, NestJS, Kotlin Spring Boot,...</li>
+
+                <li>Collaborate with cross-functional teams to identify requirements and develop technical solutions to meet business needs.</li>
+
+                <li>Implement web security best practices, including encryption, authentication, and access control.</li>
+
+                <li>Perform code reviews and optimize application performance through testing and debugging.</li>
+
+                <li>Manage deployment processes and ensure web applications are running smoothly and securely in production environment.s</li>
+              </ul>
             </div>
           </div>
         </section >
@@ -72,14 +75,17 @@ export default function AboutMe() {
                 <span className="text-xl">Software Engineer -</span>
                 <Link className="inline-block mx-2 text-blue-700 hover:text-blue-600" href={"https://fpt.edu.vn"} target="_blank">FPT University</Link>
               </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid autem consectetur
-                quas repellendus itaque fuga non eaque quaerat labore placeat cumque inventore nesciunt modi facilis,
-                rem iusto illo, aliquam reprehenderit.
-                <br />
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur excepturi quod officiis repellendus cumque distinctio,
-                sit vero sed fugit necessitatibus, minus ratione assumenda eligendi debitis officia ad? Maxime, facere sed.
-              </p>
+          
+            
+             
+              <ul className="pl-8 list-disc">
+                <li>Studied software, including coursework in algorithms, data structures, programming languages, and computer architecture.</li>
+
+                <li>Completed a many project on the design and development of a web application using the ReactJS, NextJS, NestJS, ExpressJS,... framework and MongoDB, MySQL database.</li>
+
+                <li> Participated in various hackathons and coding competitions.</li>
+
+              </ul>
 
             </div>
           </div>

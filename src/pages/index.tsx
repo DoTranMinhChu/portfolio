@@ -49,13 +49,14 @@ export default function Home() {
           <div className="divide-y divide-gray-500 ">
             <div className="py-6">
               <h1 className="py-3 text-2xl font-medium uppercase">About me</h1>
-              <p>Full stack autodidact with demonstrable capacity to assess and manage complex business needs and surmount obstacles in the way thereof thus producing refined and accessible work products.</p>
+              <p>Fullstack web developer with experience designing, developing, and maintaining web applications. Proficient in a variety of programming languages and web development frameworks, with a strong focus on user experience and responsive design. Seeking a challenging position in a dynamic and fast-paced environment.</p>
               <OpenMoreButton href="/about-me" className="mt-5 uppercase"><h5>Learn More</h5></OpenMoreButton>
             </div>
 
             <div className="py-6 my-4">
               <h2 className="py-3 text-2xl font-medium uppercase">My work</h2>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat minima quia assumenda! Repellendus, numquam commodi eos optio expedita nemo debitis, quis laudantium nisi tempore quo, repellat incidunt eaque laboriosam asperiores?</p>
+              <p>Design and develop user-friendly, responsive web applications using a variety of programming languages and web development frameworks. Collaborate with cross-functional teams to identify requirements and develop technical solutions to meet business needs. Implement web security best practices, including encryption, authentication, and access control. Perform code reviews and optimize application performance through testing and debugging.
+              </p>
               <OpenMoreButton href="/portfolio" className="mt-5 uppercase"><h5>Browse portfolio</h5></OpenMoreButton>
             </div>
           </div>
