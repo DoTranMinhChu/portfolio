@@ -35,7 +35,7 @@ export default function AboutMe() {
       <div className="px-4 py-12 sm:py-18 md:py-24 sm:px-8 md:px-24 xl:px-48">
         <section>
           <h1 className="mb-8 text-6xl font-semibold"> I&apos;m Minh Chu,<br />Fullstack Web Developer.</h1>
-          <p className="max-w-3xl ml-2 text-lg">Full stack autodidact with demonstrable capacity to assess and manage complex business needs and surmount obstacles in the way thereof thus producing refined and accessible work products.</p>
+          <p className="max-w-3xl ml-2 text-lg">Fullstack autodidact with demonstrable capacity to assess and manage complex business needs and surmount obstacles in the way thereof thus producing refined and accessible work products.</p>
         </section>
         <section className="py-2 sm:py-4 md:py-8 xl:py-12">
           <h1 className="mb-5 text-4xl font-semibold">Work experience</h1>
@@ -59,6 +59,25 @@ export default function AboutMe() {
                 <li>Perform code reviews and optimize application performance through testing and debugging.</li>
 
                 <li>Manage deployment processes and ensure web applications are running smoothly and securely in production environment.s</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div className="py-4 text-2xl font-semibold">
+              <span className="text-blue-700">/</span>
+              <span className="mx-1 ">May 2023 - Current</span>
+            </div>
+            <div className="ml-2">
+              <div className="mb-2 text-xl">
+                <span className="text-xl">Fullstack Developer Freelance -</span>
+                <Link className="inline-block mx-2 text-blue-700 hover:text-blue-600" href={"https://findicator.vn/"} target="_blank">Findicator</Link>
+              </div>
+              <ul className="pl-8 list-disc">
+                <li>As a software engineer at this company, my primary responsibility is to design and develop an application that provides users with real-time access to the indexes of various industries in the Vietnamese stock market. This includes providing insights into the sales, profit, and overall strength of each stock code.</li>
+
+                <li>To achieve this, I will be utilizing the NestJS and NextJS frameworks to design and implement the application.</li>
+
+                <li>Throughout the development process, I will also be responsible for testing and debugging the application, as well as ensuring that it meets performance and security standards. </li>
               </ul>
             </div>
           </div>

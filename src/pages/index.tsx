@@ -77,15 +77,18 @@ export default function Home() {
           <div className="p-4 lg:pt-14">
             <div className="grid grid-cols-1 gap-6 xl:gap-40 xl:grid-cols-2 lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-2">
               <div className="flex">
-                <div className="text-6xl font-bold">04</div>
+                <div className="text-6xl font-bold">02</div>
                 <div className="items-center m-auto ml-4 text-lg font-bold">Years of <br></br> experience</div>
               </div>
               <div className="flex">
-                <div className="text-6xl font-bold">012</div>
+                <div className="text-6xl font-bold">010</div>
                 <div className="items-center m-auto ml-4 text-lg font-bold">Successful projects</div>
               </div>
             </div>
-            <p className="py-5 text-lg text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation.</p>
+            <p className="py-5 text-lg text-gray-300">
+              As a full-stack web developer with 2 years of experience, I have extensive knowledge of the Node.js runtime environment and its ecosystem of libraries and tools.In addition, I have specialized in using Next.js, a popular React framework for server-side rendering, static site generation, and hybrid rendering. With Next.js, I have developed SEO-friendly and high-performance websites that provide fast initial page loads and smooth client-side transitions.
+              My experience also includes working with various databases, such as MongoDB, MySQL, and PostgreSQL, and integrating them with Node.js and Next.js applications using ORMs, such as Mongoose and TypeORM, Sequelize, Prisma, ...
+</p>
           </div>
 
         </div>
