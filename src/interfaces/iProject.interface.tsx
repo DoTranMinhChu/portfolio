@@ -10,7 +10,7 @@ export interface IProject {
     appType: string,
     shortDescription: string,
     fullDesciption: string,
-    thumnailUrl: string,
+    thumbnailUrl: string,
     position: string,
     teamSize: {
         Backend: number,

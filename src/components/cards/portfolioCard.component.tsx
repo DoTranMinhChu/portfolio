@@ -32,7 +32,7 @@ export default function PortFolioCard({ children, className, data, ...props }: P
                         <h2 className="text-2xl font-normal">{data.appType}</h2>
                     </div>
                     <div className="w-full duration-500 mt-28 group-hover:scale-110">
-                        <img className="" src={data.thumnailUrl}></img>
+                        <img className="" src={data.thumbnailUrl}></img>
                     </div>
 
                 </div >

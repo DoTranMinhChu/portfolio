@@ -5,7 +5,7 @@ const projectsList: IProject[] = [
         name: "Tingle",
         slug: "tingle",
         appType: "A matching application.",
-        thumnailUrl: "/image/portfolio/tingle-001.png",
+        thumbnailUrl: "/image/portfolio/tingle-001.png",
         technologies: [
             {
                 name: "React JS",
@@ -47,7 +47,7 @@ const projectsList: IProject[] = [
         name: "Teamscare",
         slug: "teamscare",
         appType: "A healthcare application.",
-        thumnailUrl: "/image/portfolio/teamscare-001.png",
+        thumbnailUrl: "/image/portfolio/teamscare-001.png",
         technologies: [
             {
                 name: "React JS",
@@ -93,7 +93,7 @@ const projectsList: IProject[] = [
         name: "PDCard",
         slug: "pdcard",
         appType: "A scheduling application.",
-        thumnailUrl: "/image/portfolio/pdcard-001.png",
+        thumbnailUrl: "/image/portfolio/pdcard-001.png",
         technologies: [
             {
                 name: "React JS",
@@ -137,7 +137,7 @@ const projectsList: IProject[] = [
         name: "Ahappi",
         slug: "ahappi",
         appType: "A E-commerce application.",
-        thumnailUrl: "/image/portfolio/ahappi-001.png",
+        thumbnailUrl: "/image/portfolio/ahappi-001.png",
         projectType: "Outsource Hitek Software",
         technologies: [
             {
@@ -175,7 +175,7 @@ const projectsList: IProject[] = [
         slug: "wordland",
         appType: "A NFT infomation application.",
         projectType: "Outsource Hitek Software",
-        thumnailUrl: "/image/portfolio/worldland-001.png",
+        thumbnailUrl: "/image/portfolio/worldland-001.png",
         technologies: [
             {
                 name: "Next JS",
@@ -215,7 +215,7 @@ const projectsList: IProject[] = [
         slug: "findclass",
         appType: "A educational application.",
         projectType: "Outsource Hitek Software",
-        thumnailUrl: "/image/portfolio/findclass-001.png",
+        thumbnailUrl: "/image/portfolio/findclass-001.png",
         technologies: [
             {
                 name: "Next JS",
