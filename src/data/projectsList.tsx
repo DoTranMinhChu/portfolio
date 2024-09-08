@@ -1,37 +1,117 @@
 import { IProject } from "@/interfaces/iProject.interface";
 
 const projectsList: IProject[] = [
-    {
-        name: "Tingle",
-        slug: "tingle",
-        appType: "A matching application.",
-        thumbnailUrl: "/image/portfolio/tingle-001.png",
-        technologies: [
-            {
-                name: "React JS",
-                isMyPosition: false
-            },
-            {
-                name: "Flutter",
-                isMyPosition: false
-            },
-            {
-                name: "Kotlin Spring Boot",
-                isMyPosition: true
-            }
-        ],
-        projectType: "Outsource Hitek Software",
-        teamSize: {
-            Backend: 1,
-            Frontend: 1,
-            Mobile: 2,
-            Fullstack: 0
-        },
-        position: "Backend",
-        shortDescription: `
+  {
+    name: "Green Retail",
+    slug: "green-retail",
+    appType: "E-commerce application.",
+    thumbnailUrl: "/image/portfolio/green-retail-001.png",
+    technologies: [
+      {
+        name: "NextJS",
+        isMyPosition: false,
+      },
+      {
+        name: "Flutter",
+        isMyPosition: false,
+      },
+      {
+        name: "ExpressJS",
+        isMyPosition: true,
+      },
+    ],
+    projectType: "Product GAT",
+    teamSize: {
+      Backend: 2,
+      Frontend: 2,
+      Mobile: 2,
+      Fullstack: 0,
+    },
+    position: "Backend",
+    shortDescription: `
+        <p><strong><a href="https://greenretail.com.vn/" target="_blank">GreenRetail</a></strong> is an advanced e-commerce platform where businesses can register and showcase their products. With features like promotions, gift policies, and affiliate sales, it streamlines transactions through integrated payment and delivery solutions.</p>
+        `,
+    fullDesciption: `
+        <p>&nbsp;<strong>GreenRetail</strong> is a cutting-edge e-commerce platform designed to connect businesses with customers through a seamless and user-friendly experience. It enables businesses of all sizes to easily register, upload, and manage their products on the platform, opening the door to a vast online marketplace.</p>
+        <p><br></p>
+        <p>&nbsp;One of the standout features of <strong>GreenRetail</strong> is its robust promotion and discount management system. Businesses can create and manage custom promotions, special deals, and discounts to attract customers, fostering sales growth. Additionally, <strong>GreenRetail</strong> offers flexible gift policies, allowing businesses to provide unique incentives and rewards to enhance customer loyalty.</p>
+        <p><br></p>
+        <p>&nbsp;The platform also supports a collaborative sales model by offering affiliate programs for store partners. This feature allows businesses to expand their reach through partnerships with affiliates who help promote their products, offering a new channel for sales and marketing efforts.</p>
+        <p><br></p>
+        <p>&nbsp;<strong>GreenRetail</strong> ensures smooth transactions with integrated payment gateways, supporting a variety of bank payment options to cater to customer preferences. The platform also streamlines the delivery process by partnering with reliable shipping services, ensuring that products reach customers efficiently and on time.</p>
+                <p><br></p>
+        <p>&nbsp;With a comprehensive suite of tools for product management, sales promotion, affiliate marketing, secure payment, and delivery integration, <strong>GreenRetail</strong> provides businesses with everything they need to succeed in the competitive online market. The platform is designed to simplify the complexities of e-commerce, offering businesses an easy and effective way to grow their online presence, reach new customers, and drive sales.</p>
+        `,
+  },
+  {
+    name: "MRL",
+    slug: "mrl",
+    appType: "Portal application.",
+    thumbnailUrl: "/image/portfolio/mrl-001.png",
+    technologies: [
+      {
+        name: "NextJS",
+        isMyPosition: false,
+      },
+      {
+        name: "Flutter",
+        isMyPosition: false,
+      },
+      {
+        name: "ExpressJS",
+        isMyPosition: true,
+      },
+    ],
+    projectType: "Product GAT",
+    teamSize: {
+      Backend: 1,
+      Frontend: 1,
+      Mobile: 0,
+      Fullstack: 0,
+    },
+    position: "Backend",
+    shortDescription: `
+        <p>MRL is a comprehensive data portal that consolidates Maximum Residue Limits (MRL) standards from countries like the UK, EU, China, and Japan. It allows users to search active ingredients and agricultural products, providing export standards and offering API access for merchants.</p>
+        `,
+    fullDesciption: `
+        <p>&nbsp;MRL is an advanced, comprehensive portal designed to streamline access to Maximum Residue Limits (MRL) data from multiple regions, including the UK, EU, China, Japan, and more. The platform empowers users to efficiently search for active ingredients and specific agricultural products, providing detailed standards and requirements necessary for export compliance across different regions.</p>
+        <p><br></p>
+        <p>&nbsp;By centralizing data from various countries, MRL simplifies the process of determining whether agricultural products meet the necessary regulations for international trade. Users can access critical information related to pesticide residues and agricultural standards, making it easier to ensure products align with the export requirements of each region.</p>
+        <p><br></p>
+        <p>&nbsp;Additionally, MRL offers API access for merchants and businesses, enabling them to integrate the data into their systems. With an API key provided by the platform, users can retrieve relevant MRL data automatically, making it easier to monitor and comply with ever-evolving regulations. MRL is designed to be a vital tool for businesses involved in agricultural exports, providing up-to-date and accurate information for seamless international trade..</p>
+        `,
+  },
+  {
+    name: "Tingle",
+    slug: "tingle",
+    appType: "A matching application.",
+    thumbnailUrl: "/image/portfolio/tingle-001.png",
+    technologies: [
+      {
+        name: "React JS",
+        isMyPosition: false,
+      },
+      {
+        name: "Flutter",
+        isMyPosition: false,
+      },
+      {
+        name: "Kotlin Spring Boot",
+        isMyPosition: true,
+      },
+    ],
+    projectType: "Outsource Hitek Software",
+    teamSize: {
+      Backend: 1,
+      Frontend: 1,
+      Mobile: 2,
+      Fullstack: 0,
+    },
+    position: "Backend",
+    shortDescription: `
         <p>The dating application is designed to connect individuals of opposite gender seeking romantic relationships. It features matching algorithms, video calls between male and female users, and a point-based system where male users pay points while female users earn points for video calls. Points earned on the app can be exchanged for money. These features encourage engagement, balanced gender ratios, and incentivize users to remain active on the platform.</p>
         `,
-        fullDesciption: `
+    fullDesciption: `
         <p>&nbsp;The dating application is designed to facilitate <strong>connections between individuals of the opposite gender</strong> who are seeking romantic relationships. The app offers several features to help users find potential partners and interact with them, including <strong>matching</strong>, <strong>video calls</strong>, and a <strong>bonus-point system</strong>.</p>
         <p><br></p>
         <p>&nbsp;The video call feature allows users to have <strong>virtual face-to-face interactions</strong> with their matches. However, there is a catch - <strong>male users</strong> must <strong>spend points</strong> to initiate a <strong>video call</strong>, while <strong>female users&nbsp;</strong>can <strong>earn points</strong> for participating in these calls. This approach is intended to encourage a more balanced gender ratio and incentivize female users to engage with male users on the platform.</p>
@@ -40,40 +120,38 @@ const projectsList: IProject[] = [
         <p><br></p>
         <p>&nbsp;Overall, this dating application offers several innovative features to help users find and connect with potential partners. The matching function and video call feature enable users to interact with individuals who share similar interests and preferences, while the point-based system provides an additional incentive for users to engage with the platform and earn rewards.</p>
         `,
-
-
+  },
+  {
+    name: "Teamscare",
+    slug: "teamscare",
+    appType: "A healthcare application.",
+    thumbnailUrl: "/image/portfolio/teamscare-001.png",
+    technologies: [
+      {
+        name: "React JS",
+        isMyPosition: false,
+      },
+      {
+        name: "React Native",
+        isMyPosition: false,
+      },
+      {
+        name: "Express JS",
+        isMyPosition: true,
+      },
+    ],
+    projectType: "Outsource Hitek Software",
+    position: "Backend",
+    teamSize: {
+      Backend: 1,
+      Frontend: 2,
+      Mobile: 2,
+      Fullstack: 0,
     },
-    {
-        name: "Teamscare",
-        slug: "teamscare",
-        appType: "A healthcare application.",
-        thumbnailUrl: "/image/portfolio/teamscare-001.png",
-        technologies: [
-            {
-                name: "React JS",
-                isMyPosition: false
-            },
-            {
-                name: "React Native",
-                isMyPosition: false
-            },
-            {
-                name: "Express JS",
-                isMyPosition: true
-            }
-        ],
-        projectType: "Outsource Hitek Software",
-        position: "Backend",
-        teamSize: {
-            Backend: 1,
-            Frontend: 2,
-            Mobile: 2,
-            Fullstack: 0
-        },
-        shortDescription: `
+    shortDescription: `
         <p>Stay on track with your health goals with our <strong>alarm&nbsp;</strong>function, <strong>meal logging,</strong> <strong>step tracker</strong>, <strong>health challenges</strong>, and <strong>coin rewards</strong>.<strong>&nbsp;Exchange coins for gifts</strong> or other rewards. Download now to take control of your health and achieve your wellness goals!</p>
         `,
-        fullDesciption: `
+    fullDesciption: `
         <p>&nbsp;Application comes packed with features that will motivate and inspire you to make positive changes in your daily routine.</p>
         <p><br></p>
         <p>&nbsp;One of the key features of our application is the <strong>alarm&nbsp;</strong>function, which sends you reminders to take your medication or complete other important health-related tasks. With our alarm, you will never forget to take care of yourself and stay on track with your health goals.</p>
@@ -86,40 +164,38 @@ const projectsList: IProject[] = [
         <p><br></p>
         <p>&nbsp;Finally, the coins you earn through our application can be e<strong>xchanged for gifts or other rewards</strong>. This feature provides additional motivation for you to stay engaged with the app and make healthy choices.</p>
         `,
+  },
+  {
+    name: "PDCard",
+    slug: "pdcard",
+    appType: "A scheduling application.",
+    thumbnailUrl: "/image/portfolio/pdcard-001.png",
+    technologies: [
+      {
+        name: "React JS",
+        isMyPosition: false,
+      },
+      {
+        name: "React Native",
+        isMyPosition: false,
+      },
+      {
+        name: "Express JS",
+        isMyPosition: true,
+      },
+    ],
+    projectType: "Outsource Hitek Software",
+    position: "Backend",
+    teamSize: {
+      Backend: 2,
+      Frontend: 1,
+      Mobile: 2,
+      Fullstack: 0,
     },
-    {
-
-
-        name: "PDCard",
-        slug: "pdcard",
-        appType: "A scheduling application.",
-        thumbnailUrl: "/image/portfolio/pdcard-001.png",
-        technologies: [
-            {
-                name: "React JS",
-                isMyPosition: false
-            },
-            {
-                name: "React Native",
-                isMyPosition: false
-            },
-            {
-                name: "Express JS",
-                isMyPosition: true
-            }
-        ],
-        projectType: "Outsource Hitek Software",
-        position: "Backend",
-        teamSize: {
-            Backend: 2,
-            Frontend: 1,
-            Mobile: 2,
-            Fullstack: 0
-        },
-        shortDescription: `
+    shortDescription: `
         <p>The scheduling application offers Planner, Time Tracker/Checker, and Scheduler functions, with easy recording and data conversion. It also includes ToDo-List, Check-List, and D-day features to help users reach their goals. The application provides daily, weekly, and monthly progress checks and supports Habit/Daily Tracker for creating and monitoring habits. It also offers a Diary feature, Check monthly records, Search function, Note, and Instagram-like self-development tracking.</p>
         `,
-        fullDesciption: `
+    fullDesciption: `
         <p>Application offers a range of functions that will help you stay on top of your schedule, increase productivity, and reach your goals.</p>
         <p><br></p>
         <p>With <strong>Planner</strong>, <strong>Time Tracker</strong>/<strong>Checker</strong>, and <strong>Scheduler</strong>, you can easily record and manage your time. Our unique <strong>Drag&amp;Click</strong> feature allows you to record your time in 10-minute increments, making data conversion a breeze.</p>
@@ -131,72 +207,72 @@ const projectsList: IProject[] = [
         <p>Creating habits has never been easier with our <strong>Habit/Daily Tracker</strong>, which supports grouped habits by time of day with breakfast, lunch, and dinner default settings.With <strong>daily</strong>, <strong>weekly</strong>, <strong>monthly</strong>, and <strong>yearly&nbsp;</strong>progress checks will help you stay on track and <strong>monitor your progress</strong>.</p>
         <p>Finally, application is like the<strong>&nbsp;Instagram of self-development</strong>, allowing you to track your progress and <strong>share your accomplishments with others</strong>.</p>
         `,
+  },
+  {
+    name: "Ahappi",
+    slug: "ahappi",
+    appType: "A E-commerce application.",
+    thumbnailUrl: "/image/portfolio/ahappi-001.png",
+    projectType: "Outsource Hitek Software",
+    technologies: [
+      {
+        name: "Next JS",
+        isMyPosition: false,
+      },
+      {
+        name: "React Native",
+        isMyPosition: false,
+      },
+      {
+        name: "Express JS",
+        isMyPosition: true,
+      },
+    ],
+    position: "Backend",
+    teamSize: {
+      Backend: 2,
+      Frontend: 2,
+      Mobile: 2,
+      Fullstack: 0,
     },
-    {
-
-        name: "Ahappi",
-        slug: "ahappi",
-        appType: "A E-commerce application.",
-        thumbnailUrl: "/image/portfolio/ahappi-001.png",
-        projectType: "Outsource Hitek Software",
-        technologies: [
-            {
-                name: "Next JS",
-                isMyPosition: false
-            },
-            {
-                name: "React Native",
-                isMyPosition: false
-            }, {
-                name: "Express JS",
-                isMyPosition: true
-            }
-        ],
-        position: "Backend",
-        teamSize: {
-            Backend: 2,
-            Frontend: 2,
-            Mobile: 2,
-            Fullstack: 0
-        },
-        shortDescription: `
+    shortDescription: `
         <p>Ahappi is a user-friendly e-commerce application that provides customers with a diverse range of product lines and comprehensive product information. It offers personalized customer care programs and special deals and promotions to make shopping more enjoyable and affordable. With a streamlined checkout process, Ahappi ensures that customers receive their products in a timely and efficient manner.</p>
         `,
-        fullDesciption: `
+    fullDesciption: `
         <p>Ahappi is an innovative <strong>e-commerce</strong> application that aims to provide customers with a seamless and personalized shopping experience. With its user-friendly interface and diverse range of product lines, Ahappi makes it easier for customers to discover and purchase items that cater to their individual needs and preferences.</p>
         <p><br></p>
         <p>One of the key features of Ahappi is its comprehensive product information system. This system provides customers with detailed descriptions, images, and specifications of each product, ensuring that they are well-informed about their potential purchases. Additionally, Ahappi also offers a variety of customer care programs that provide customers with personalized support and assistance throughout their shopping journey.</p>
         <p><br></p>
         <p>Another advantage of using Ahappi is its special deals and promotions. Customers have many opportunities to buy products at preferential prices, making shopping on the app more affordable and enjoyable. Furthermore, Ahappi&apos;s user-friendly design and streamlined checkout process ensure that customers can easily complete their transactions and receive their products in a timely and efficient manner.</p>
         `,
+  },
+  {
+    name: "WorldLand",
+    slug: "wordland",
+    appType: "A NFT infomation application.",
+    projectType: "Outsource Hitek Software",
+    thumbnailUrl: "/image/portfolio/worldland-001.png",
+    technologies: [
+      {
+        name: "Next JS",
+        isMyPosition: false,
+      },
+      {
+        name: "Express JS",
+        isMyPosition: true,
+      },
+    ],
+    position: "Backend",
+    teamSize: {
+      Backend: 2,
+      Frontend: 2,
+      Mobile: 0,
+      Fullstack: 0,
     },
-    {
-        name: "WorldLand",
-        slug: "wordland",
-        appType: "A NFT infomation application.",
-        projectType: "Outsource Hitek Software",
-        thumbnailUrl: "/image/portfolio/worldland-001.png",
-        technologies: [
-            {
-                name: "Next JS",
-                isMyPosition: false
-            },
-            {
-                name: "Express JS",
-                isMyPosition: true
-            },
-        ],
-        position: "Backend",
-        teamSize: {
-            Backend: 2,
-            Frontend: 2,
-            Mobile: 0,
-            Fullstack: 0
-        },
-        shortDescription: `
+    shortDescription: `
         <p>Findclass is a user-friendly application that helps students search for online courses based on their preferences. It offers features such as search by demand, time, and forum function to interact with others.&nbsp;</p>
         `,
-        fullDesciption: `
+    fullDesciption: `
         <p>World Land is a comprehensive platform for NFT enthusiasts, providing project and minting information, a community forum, NFT news and guides, and customizable notifications. Whether you are a seasoned collector or new to the world of NFTs, World Land has everything you need to succeed in this exciting space.</p>
         <p><br></p>
         <p><strong>WorldLand </strong>is divided into several sections, each with its own unique features and benefits. In the project NFT information section, you will find detailed information about the latest NFT projects, including their creators, themes, and unique features. Platform keep database up-to-date, so you can be sure that you are getting the latest information about the most exciting NFT projects.</p>
@@ -209,34 +285,34 @@ const projectsList: IProject[] = [
         <p><br></p>
         <p>Finally, <strong>WorldLand </strong>offer a notification system that keeps you informed about the latest <strong>NFT projects, events, and news</strong>. You can customize your notifications to receive updates about the topics that interest you the most, so you never miss out on the latest developments in the world of NFTs.</p>
         `,
+  },
+  {
+    name: "Findclass",
+    slug: "findclass",
+    appType: "A educational application.",
+    projectType: "Outsource Hitek Software",
+    thumbnailUrl: "/image/portfolio/findclass-001.png",
+    technologies: [
+      {
+        name: "Next JS",
+        isMyPosition: false,
+      },
+      {
+        name: "Express JS",
+        isMyPosition: true,
+      },
+    ],
+    position: "Backend",
+    teamSize: {
+      Backend: 2,
+      Frontend: 2,
+      Mobile: 2,
+      Fullstack: 0,
     },
-    {
-        name: "Findclass",
-        slug: "findclass",
-        appType: "A educational application.",
-        projectType: "Outsource Hitek Software",
-        thumbnailUrl: "/image/portfolio/findclass-001.png",
-        technologies: [
-            {
-                name: "Next JS",
-                isMyPosition: false
-            },
-            {
-                name: "Express JS",
-                isMyPosition: true
-            },
-        ],
-        position: "Backend",
-        teamSize: {
-            Backend: 2,
-            Frontend: 2,
-            Mobile: 2,
-            Fullstack: 0
-        },
-        shortDescription: `
+    shortDescription: `
         <p>Findclass is a user-friendly application that helps students search for online courses based on their preferences. It offers features such as search by demand, time, and forum function to interact with others.&nbsp;</p>
         `,
-        fullDesciption: `
+    fullDesciption: `
         <p>The <strong>Findclass </strong>application is a user-friendly platform designed to help students search for online <strong>classes </strong>based on their preferences. With this application, users can easily search for courses by <strong>demand</strong>, <strong>time</strong>, and<strong>&nbsp;other criteria</strong>.</p>
         <p><br></p>
         <p>One of the key features of the application is the <strong>forum </strong>function, which enables users to interact with each other, share their experiences and knowledge, and exchange ideas. This feature creates a supportive learning environment for students, and encourages active participation and engagement.</p>
@@ -245,8 +321,7 @@ const projectsList: IProject[] = [
         <p><br></p>
         <p>Overall, the <strong>Findclass </strong>application is an innovative tool that provides a seamless and efficient way for students to find and enroll in online courses, while also offering a range of management functions to administrators.</p>
         `,
-    }
+  },
+];
 
-]
-
-export { projectsList }
+export { projectsList };
